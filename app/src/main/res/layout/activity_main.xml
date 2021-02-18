@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ms_black"
+    tools:context=".activity.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/darK_blue"
+        app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay"
+        app:theme="@style/ToolbarColoredBackArrow">
+
+            <TextView
+                android:id="@+id/toolbar_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Rishi Shah "
+                android:padding="10dp"
+                android:gravity="center"
+                android:textColor="@color/white_toolbar"
+                android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+                android:drawableRight="@drawable/ic_baseline_expand_more_24"
+                android:layout_gravity="left" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+        <LinearLayout
+            android:id="@+id/range_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:weightSum="2"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue_grey"
+                android:layout_weight="0.50"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:text="@string/daily"/>
+
+            <TextView
+                android:id="@+id/tv_weekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:gravity="left"
+                android:textColor="@color/light_blue"
+                android:text="@string/weekly"/>
+
+            <TextView
+                android:id="@+id/tv_monthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:gravity="left"
+                android:textColor="@color/light_blue"
+                android:text="@string/monthly"/>
+
+            <ImageView
+                android:id="@+id/img_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/ic_baseline_chevron_left_18"/>
+
+
+            <TextView
+                android:id="@+id/tv_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:gravity="center"
+                android:textColor="@color/white_toolbar"
+                android:text="@string/range"/>
+
+            <ImageView
+                android:id="@+id/img_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/ic_baseline_chevron_right_18"/>
+
+        </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/range_layout" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:id="@+id/noRecords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No data Found"
+        android:textColor="@color/white_toolbar"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

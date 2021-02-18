@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SampleProject</string>
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="range">14 Sep</string>
+    <string name="text1">Healthy Range</string>
+    <string name="text12">Average 55-65 bpm</string>
+    <string name="text2">Borderline Range</string>
+    <string name="text22">Average 45-54 bpm</string>
+    <string name="text">The heart rate is one of the vital signs or the important indicators of heth in the human body. it measures thenumber of times that the heart contracts or beats per minute. The speed of the heartbeat varies as a result of physical activity, threats to safety, and emotional responses. The resting heart rate refers to the heart when person is at rest.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

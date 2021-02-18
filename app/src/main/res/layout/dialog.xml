@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34495e"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="22dp">
+
+        <TextView
+            android:id="@+id/text_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" XXXX"
+            android:textColor="@color/white_toolbar"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/text_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/text_dialog"
+            android:textColor="@color/blue_grey"
+            android:textSize="18sp"/>
+
+        <View
+            android:id="@+id/color_green"
+            android:layout_width="4dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/text_body"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gradient_green">
+
+        </View>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text1"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/color_green"
+            android:layout_below="@+id/text_body"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white_toolbar"/>
+
+        <TextView
+            android:id="@+id/text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text12"
+            android:layout_toEndOf="@+id/color_green"
+            android:layout_below="@+id/text1"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/blue_grey"/>
+
+        <View
+            android:id="@+id/color_orange"
+            android:layout_width="4dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/color_green"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gradient_orange">
+
+        </View>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text2"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/color_orange"
+            android:layout_below="@+id/color_green"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white_toolbar"/>
+
+        <TextView
+            android:id="@+id/text22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text22"
+            android:layout_toEndOf="@+id/color_orange"
+            android:layout_below="@+id/text2"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/blue_grey"/>
+
+        <Button
+            android:id="@+id/btn_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/color_orange"
+            android:layout_marginTop="20dp"
+            android:text="Done"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
